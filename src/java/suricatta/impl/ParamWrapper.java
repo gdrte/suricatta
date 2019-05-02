@@ -22,7 +22,7 @@ public class ParamWrapper extends org.jooq.impl.CustomField
   private Object value;
 
   public ParamWrapper(final IParam adapter, final Object value) {
-    super(null, DefaultDataType.getDefaultDataType("__suricatta_other"));
+    super("surricatta", DefaultDataType.getDefaultDataType("__suricatta_other"));
     this.adapter = adapter;
     this.value = value;
     this.inline = false;
@@ -77,5 +77,3 @@ public class ParamWrapper extends org.jooq.impl.CustomField
     }
   }
 }
-
-

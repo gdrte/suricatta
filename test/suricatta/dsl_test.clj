@@ -228,7 +228,7 @@
                       (dsl/row 3 4))
                      (dsl/to-table "t1" "f1" "f2"))))]
       (is (= (fmt/sql q {:dialect :pgsql})
-             "select f1, f2 from (values(?, ?), (?, ?)) as \"t1\"(\"f1\", \"f2\")"))))
+             "select f1, f2 from (values (?, ?), (?, ?)) as \"t1\"(\"f1\", \"f2\")"))))
 
   (testing "Nested select in condition clause"
     (let [q (-> (dsl/select)
