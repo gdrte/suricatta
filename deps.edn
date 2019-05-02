@@ -1,0 +1,8 @@
+{
+ :paths ["src"]
+ :aliases
+ {:java {:extra-paths ["java"]}}
+ :deps {
+        org.clojure/clojure {:mvn/version "1.10.0", :scope "provided"},
+        org.jooq/jooq {:mvn/version "3.11.11"}}
+ }
